@@ -1,0 +1,73 @@
+def connect4_intro():
+    print("Welcome to the Connect 4 Program.")
+    print("In this program, you have the option to play Connect 4 against an AI.")
+
+def connect4_rules():
+    print("Here are the rules for Connect 4.")
+    print("")
+    print("CONNECT 4 RULES:")
+    print("----------------")
+    print("1) Players must connect 4 of the same symbol (X or O) in a row to win.")
+    print("")
+    print("2) Only one piece is played at a time.")
+    print("")
+    print("3) Players can be on the offensive or defensive.")
+    print("")
+    print("4) The game ends when there is a 4 in a row or stalemate.")
+    print("")
+    print("5) The starter of the previous game goes second on the next game.")
+
+def connect4_cancel():
+    print("Alright, Connect 4 program cancelled.")
+
+def connect4_levels():
+    print("There are three different levels of difficulty for this Connect 4 program.")
+    print("")
+    print("Here are the three levels of difficulty you can choose from:")
+    print("")
+    print("EASY: Sets the Connect 4 Program to it's easiest mode, a good mode for beginners and younger users.")
+    print("")
+    print("INTERMEDIATE: Sets the Connect 4 Program to it's intermediate mode, a good mode for those who have played Connect 4 before but haven't fully mastered playing it yet")
+    print("")
+    print("HARD: Sets the Connect 4 Program to it's hardets mode, a good mode for expert Connect 4 players, or players who want a challange.")
+
+
+connect4_intro()
+print("")
+connect4_start = input("Would you like to play Connect 4?").lower()
+if connect4_start == "yes":
+    print("Alright, starting the Connect 4 program. Prepare to Connect 4!")
+    connect4_rules_showcase = input("Would you like to view the rules of Connect 4?").lower()
+    if connect4_rules_showcase == "yes":
+        connect4_rules()
+        print("")
+    connect4_difficulty = input("Would you like to set a difficulty in Connect 4 or randomise the difficulty? Type 'a' for setting a difficulty, or 'b' to randomize the difficulty.").lower()
+    if connect4_difficulty == "a":
+        connect4_levels()
+        print("")
+        connect4_level_ask = input("What level of difficulty would you like to play for Connect 4? Type 'a' for easy, 'b' for intermediate and 'c' for hard difficulty.").lower()
+        if connect4_level_ask == "a":
+            print("Alright, starting Connect 4!")
+        elif connect4_level_ask == "b":
+            print("Alright, starting Connect 4!")
+        elif connect4_level_ask == "c":
+            print("Alright, starting Connect 4!")
+        elif connect4_level_ask =="2lazy":
+            print("...")
+            print("")
+            print("...")
+            print("")
+            print("...really? Well, you win.")
+        elif connect4_level_ask =="hell":
+            print("WARNING! THIS MODE WILL MAKE YOUR CONNECT 4 EXPERIENCE HELL.")
+            print("")
+            hell_mode_ask = input("..would you like to proceed?").lower()
+            if hell_mode_ask == ("yes"):
+                print("...")
+                print("..do not say that this program did not warn you.")
+            else:
+                print("Thought so.")
+
+
+else:
+       connect4_cancel()
